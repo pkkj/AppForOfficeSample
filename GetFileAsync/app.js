@@ -14,7 +14,7 @@
         return window.btoa(s);
     }
 
-    // Call getFileAsnyc() to start the retrieving file process.
+    // Call getFileAsync() to start the retrieving file process.
     function getFileAsyncInternal() {
         Office.context.document.getFileAsync("compressed", { sliceSize: 10240 }, function (asyncResult) {
             if (asyncResult.status == Office.AsyncResultStatus.Failed) {
